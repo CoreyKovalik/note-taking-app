@@ -2,6 +2,8 @@
 
 ### Install
 
+run `npm install`
+
 `cd` into /backend and /frontend
 
 run `npm install` in both directories
@@ -10,17 +12,17 @@ run `npm install` in both directories
 
 In each directory, you can:
 
->Run: `npm run start`
+> Run: `npm run start`
 
->Test: `npm run dev` then `npm run test`
+> Test: `npm run dev` then `npm run test`
 
 These commands remain the same in either directory, /backend or /frontend:
 
->Launch entire app with 'concurrently':  `npm run dev`
+> Launch entire app with 'concurrently':  `npm run dev`
 
->>Run backend: `npm run backend`
+>> Run backend: `npm run backend`
 
->>Run frontend: `npm run frontend`
+>> Run frontend: `npm run frontend`
 
 You can optionally build the React front-end with `npm run build`
 
@@ -40,16 +42,14 @@ You can optionally build the React front-end with `npm run build`
     - uses `selenium-webdriver`
     - `selenium-webdriver` and `jest` working together
 
-# Note about selenium-webdriver:
-chromedriver.exe / geckodriver.exe must be installed on your PATH.
-
-If you don't have time for that...
-
-I believe giving `npm install chromedriver geckodriver -g` a try might save time with the install
+<img src="https://raw.githubusercontent.com/CoreyKovalik/note-taking-app/master/app-example.png" width="800">
 
 ```
-homework-sse/
-├── app example.png
+note-taking-app/
+├── app-example.png
+├── package-lock.json
+├── package.json
+├── README.md
 ├── /backend/
 │  ├── .gitignore
 │  ├── app.js

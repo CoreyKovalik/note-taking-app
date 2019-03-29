@@ -1,3 +1,28 @@
+# Frontend
+
+### Install
+
+run `npm install` in /frontend
+
+### Frontend Scripts:
+
+> Run: `npm run start`
+
+> Selenium Tests: `npm run dev` then `npm run test`
+
+> Launch entire app with 'concurrently':  `npm run dev`
+
+>> Run backend: `npm run backend`
+
+>> Run frontend: `npm run frontend`
+
+You can optionally build the React front-end with `npm run build`
+
+
+
+
+# ---- Below: Create React App generated README ----
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
