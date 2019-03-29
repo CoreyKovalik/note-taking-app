@@ -1,0 +1,102 @@
+.full-note {
+    background-color: #FFFF99;
+    text-align: center;
+    /*height: 100%;*/
+    position: relative;
+    top: 58px;
+    max-height: calc(100% - 158px);
+    padding: 50px;
+    overflow: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.full-note::-webkit-scrollbar { 
+    display: none; /* Chrome / Safari */
+}
+
+.full-note .modify-note {
+    padding-top: 10px;
+}
+
+.full-note .modify-note .edit-note-button {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.full-note .modify-note .delete-note-button {
+    display: inline-block;
+}
+
+.full-note .modify-note .edit-note-button .button-primary {
+    width: 150px;
+}
+
+.full-note .modify-note .delete-note-button .button-primary,
+.full-note .modify-note .confirm-delete .delete-button {
+    width: 150px;
+    background-color: pink;
+    border-color: pink;
+    color: red;
+}
+
+.full-note .modify-note .delete-note-button .button-primary:hover,
+.full-note .modify-note .confirm-delete .delete-button:hover {
+    background-color: palevioletred;
+    border-color: palevioletred;
+    color: darkred;
+}
+
+.full-note .modify-note .confirm-delete {
+    width: 80%;
+    min-width: 150px;
+    margin: 0 auto;
+    border: 3px solid red;
+    border-radius: 16px;
+    padding: 10px;
+    color: red;
+    text-align: center;
+}
+
+.full-note .modify-note .confirm-delete .button-primary {
+    margin-top: 10px;
+}
+
+.full-note .modify-note .confirm-delete .confirm-prompt {
+    font-family: Permanent Marker, cursive;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.full-note .modify-note .confirm-delete .delete-button {
+    margin-right: 20px;
+}
+
+.full-note .modify-note .confirm-delete .cancel-button {
+    background-color: lime;
+    border-color: lime;
+}
+
+.full-note .modify-note .confirm-delete .cancel-button:hover {
+    background-color: limegreen;
+    border-color: limegreen
+;}
+
+.full-note .note {
+
+}
+
+.full-note .note .note-title {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.full-note .note .note-message {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2em;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}

@@ -1,0 +1,39 @@
+{
+  "name": "homework-sse-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "es6-promise": "^4.2.6",
+    "moment": "^2.24.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-scripts": "2.1.5",
+    "superagent": "^4.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest src/test/e2e",
+    "eject": "react-scripts eject",
+    "frontend": "react-scripts start",
+    "backend": "cd ../backend && nodemon index.js",
+    "dev": "concurrently \"react-scripts start\" \"cd ../backend && nodemon server.js\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "proxy": "http://localhost:8080",
+  "devDependencies": {
+    "chromedriver": "^2.46.0",
+    "concurrently": "^4.1.0",
+    "geckodriver": "^1.16.0",
+    "jest-cli": "^24.4.0",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  }
+}

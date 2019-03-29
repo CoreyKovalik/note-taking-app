@@ -1,0 +1,48 @@
+.notes-list {
+    background-color: #FCF2AE;
+    height: calc(100% - 58px);
+    overflow: hidden;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.notes-list .notes {
+    background-color: #FCF2AE;
+    overflow-y: scroll;
+    height: 100%;
+    margin-right: -50px; /* for hiding    */
+    padding-right: 50px; /* the scrollbar */
+}
+
+.notes-list .notes .note {
+    max-height: 80px;
+}
+
+.notes-list .notes .note:nth-child(odd) {
+    background-color: #FFD167;
+    margin-right: -50px; /* to cover over the invisible scrollbar */
+    padding-right: 50px; /* adjust to trigger text-overflow */
+}
+
+.notes-list .notes .note:hover {
+    background-color: #FFFF99;
+    margin-right: -50px;
+    cursor: pointer;
+} 
+
+.notes-list .notes .note .title-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+.notes-list .notes .note .message-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
+    margin-bottom: 0px;
+    margin-left: 35px;
+}

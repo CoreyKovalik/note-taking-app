@@ -1,0 +1,13 @@
+.note-sidebar {
+    height: 100%;
+}
+
+.new-note-button {
+    background-color: #FCF2AE;
+    text-align: center;
+    height: 58px;
+}
+
+.new-note-button .button-primary {
+    margin-top: 10px;
+}
