@@ -1,0 +1,30 @@
+{
+  "name": "homework-sse",
+  "version": "1.0.0",
+  "description": "A simple note taking app",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev": "concurrently \"nodemon server.js\" \"cd ../frontend && npm run start\"",
+    "frontend": "cd ../frontend && npm run start",
+    "backend": "nodemon server.js",
+    "test": "jest --config ./test/jest.config.js"
+  },
+  "author": "Corey Kovalik",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^4.1.0",
+    "jest": "^24.1.0",
+    "jest-chain": "^1.1.2",
+    "jest-cli": "^24.4.0",
+    "jest-extended": "^0.11.1",
+    "nodemon": "^1.18.10",
+    "supertest": "^3.4.2"
+  }
+}
