@@ -1,5 +1,7 @@
 # Simple note taking app
 
+<img src="https://raw.githubusercontent.com/CoreyKovalik/note-taking-app/master/app-example.png" width="800">
+
 ### Install
 
 run `npm install`
@@ -41,8 +43,6 @@ You can optionally build the React front-end with `npm run build`
  - __Selenium__ tests the frontend UI
     - uses `selenium-webdriver`
     - `selenium-webdriver` and `jest` working together
-
-<img src="https://raw.githubusercontent.com/CoreyKovalik/note-taking-app/master/app-example.png" width="800">
 
 ```
 note-taking-app/
