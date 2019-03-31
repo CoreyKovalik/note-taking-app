@@ -1,6 +1,16 @@
 const express = require('express');
 const router = express.Router();
 
+// firebase Add the SDK
+const admin = require('firebase-admin');
+
+const serviceAccount = require('../../utils/firebase-adminsdk.json');
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: 'https://express-note-taking-app.firebaseio.com/'
+});
+
 const { Store, Note } = require('../../utils/notes');
 const { addMoreNotes, moreNotes } = require('../../utils/more-notes');
 addMoreNotes(Store, Note, moreNotes); // add more notes to work with
