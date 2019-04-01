@@ -4,12 +4,7 @@ import NotesList from './NotesList/NotesList';
 import { getNotes } from '../utils/notes-api-helpers'
 
 class NoteSidebar extends Component {
-    state = {
-        notes: [],
-        currentNote: null,
-        display: 'FullNote'
-    }
-
+    
     componentDidMount = async () => {
         const notes = await getNotes();
         this.props.getNotes(notes);
